@@ -4,7 +4,7 @@ public class DivideTwoIntegers29{
 
     public static void main(String[]args){
 
-        System.out.println(divide(-7,3));
+        System.out.println(divide(-2147483648,1));
 
     }
 
@@ -13,33 +13,51 @@ public class DivideTwoIntegers29{
         int quotient = 0;
         boolean neg = false;
 
-        //Handle negative numbers
+
         if(divisor<0 || dividend<0) neg=true;
+        if(divisor<0 && dividend<0) neg = false;
         divisor = Math.abs(divisor);
         dividend = Math.abs(dividend);
+        //System.out.println(dividend);
+        
+        if(dividend<-2147483647){
+            dividend = 2147483647;
+        }
 
-        //Edge case
+        if(dividend>2147483647){
+            dividend = 2147483647;
+        }
+
         if(dividend<divisor){
             return 0;
         }
-
-        //Loop to use addition to find quotient
-        int hold = divisor;
+        if(divisor ==1){
+            if (neg){
+                return -dividend;
+            }
+            else return dividend;
+        }
+        if(divisor == dividend){
+            if(neg) return -1;
+            else return 1;
+        }
+        int temp = divisor;
         while(divisor<dividend){
-            divisor += hold;
+            divisor += temp;
             quotient++;
         }
         
-        if(quotient>2147483647){
-            return 2147483647;
+        if(quotient>=2147483647){
+            if(neg) return -2147483647;
+            else return 2147483647;
         }
-        else if(quotient<-2147483647){
-            return -2147483647;
+        else if(quotient<=-2147483647){
+            if(neg) return -2147483647;
+            else return 2147483647;
         }
         else if(neg){
             return -quotient;
         }
         else return quotient;
-
     }
 }

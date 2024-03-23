@@ -23,3 +23,16 @@ Like magic. More practice needed in this kind of challenging array questions.
 
 --- 
 
+### Question 29: Divide Two Integers (Medium)
+
+The solution involves bitwise operations? Who knew? Check [this](https://leetcode.com/problems/divide-two-integers/solutions/1516367/complete-thinking-process-intuitive-explanation-all-rules-followed-c-code). 
+
+
+---
+
+### Question 136: Single Number (Easy)
+
+The solutoon involves using bitwise XOR. WE know that a^b=0 iff a=b. so in the case where an array contians duplicates, all the duplicates cancel out, leaving only the original number.
+
+---
+
