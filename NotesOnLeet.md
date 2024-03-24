@@ -15,7 +15,7 @@ Basically, after making a result arrayList of Integer Lists and an Arraylist cal
 <li> Iterate through j=1 to j=i</li>
 <li> if j=1 or j=i, add 1 to save </li>
 <li> Else, add (prev-1)+(prev-2) to save </li>
-<li> CLose the bracket, then assign save to prev and add save to result </li>
+<li> Close the bracket, then assign save to prev and add save to result </li>
 <li>  return result </li>
 </ol>
 
