@@ -6,7 +6,7 @@
 Pascal's Triangle forced me to look at the solution. Mainly this is because I thought there was a recursive solution and 
 I tried to wrap my head around that. 
 
-But the solution found [here](https://hwennnn.github.io/leetcode-solutions/0118/) achieves it with a nested loop and no recursion! THey ahd a very clever use of indices to prevent going out of bounds. They likely noticed a property of Pascal's Triangle from a mathematician's POV. 
+But the solution found [here](https://hwennnn.github.io/leetcode-solutions/0118/) achieves it with a nested loop and no recursion! They had a very clever use of indices to prevent going out of bounds. They likely noticed a property of Pascal's Triangle from a mathematician's POV. 
 
 Basically, after making a result arrayList of Integer Lists and an Arraylist called prev initialized to null:
 <ol>
@@ -36,3 +36,13 @@ The solutoon involves using bitwise XOR. WE know that a^b=0 iff a=b. so in the c
 
 ---
 
+### Question 504 : Base 7 (Easy)
+
+Rebasing a number is pretty interesting. The algorithm goes thus:
+
+1. Repeatedly divide by the new base until the quotient is less than the new base.
+2. Reverse the collected remainders and append to the last quotient
+
+Otherwise pretty straightforward. Just watch out for negative numbers.
+
+---
