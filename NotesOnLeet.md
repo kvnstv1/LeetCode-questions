@@ -46,3 +46,12 @@ Rebasing a number is pretty interesting. The algorithm goes thus:
 Otherwise pretty straightforward. Just watch out for negative numbers.
 
 ---
+
+### Question 67: Adding binary numbers (Easy)
+
+[Anwesome answer](url=https://leetcode.com/problems/add-binary/solutions/1679423/well-detailed-explaination-java-c-python-easy-for-mind-to-accept-it) here. Basically, use the modulor operator instead of if-else 
+statements to shorten code. Truly an interesting idea. 
+
+Basically, find the sum the way I did. But then assign values using the modulus operator
+and the ? conditional operator. Hard to describe. Definitely look through it.Also interesting is how you can 
+convert a char that is a number into its `int` by subtracting '0'. 
