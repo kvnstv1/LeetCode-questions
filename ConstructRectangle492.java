@@ -23,7 +23,6 @@ public class ConstructRectangle492 {
             }
 
         }
-        ArrayList<Integer> diff =  new ArrayList<Integer>();
         
         int ind=0;
         int min = divisors.get(1)-divisors.get(0);
