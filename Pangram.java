@@ -18,7 +18,7 @@ public class Pangram {
                                      .mapToObj(c -> (char)c)
                                      .map(Character::toLowerCase);
         //Make an iterator
-        Iterator letters = letter.iterator();
+        Iterator<Character> letters = letter.iterator();
         
         //Fill alphabet
         HashSet<Character> alphabet = new HashSet<Character>(26);
@@ -50,6 +50,7 @@ public class Pangram {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string below");
         String input = sc.nextLine();
+        sc.close();
 
         pangrams(input);
         
